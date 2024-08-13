@@ -1,12 +1,15 @@
 import React from 'react';
 import '../styles/Portifolio.css';
+import heroImg from '../assets/images/hero-img.png';
+import carroceriasImg from '../assets/images/carrocerias-jb.png';
+import image3 from '../assets/images/image3.jpg';
 
 const projects = [
   {
     id: 1,
     title: 'Projeto 1',
     description: 'Descrição breve do projeto 1.',
-    image: '/hero-img.png', // Caminho relativo a partir da raiz
+    image: heroImg, // Imagem importada
     github: 'https://github.com/usuario/projeto1',
     live: 'https://www.exemplo.com/projeto1'
   },
@@ -14,7 +17,7 @@ const projects = [
     id: 2,
     title: 'Fabrica carrocerias',
     description: 'Fabricação e reformas em geral.',
-    image: '/carrocerias-jb.png', // Caminho relativo a partir da raiz
+    image: carroceriasImg, // Imagem importada
     github: 'https://github.com/usuario/projeto2',
     live: 'https://carroceriasjb.com.br/'
   },
@@ -22,7 +25,7 @@ const projects = [
     id: 3,
     title: 'Projeto 3',
     description: 'Descrição breve do projeto 3.',
-    image: '/path/to/image3.jpg', // Caminho relativo a partir da raiz
+    image: image3, // Imagem importada
     github: 'https://github.com/usuario/projeto3',
     live: 'https://www.exemplo.com/projeto3'
   },
