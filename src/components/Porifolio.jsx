@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 import '../styles/Portifolio.css';
 import heroImg from '../../public/hero-img.png';
 import carroceriasImg from '../../public/carrocerias-jb.png';
@@ -33,6 +34,27 @@ const projects = [
 ];
 
 const Portfolio = () => {
+  useEffect(() => {
+    const sr = ScrollReveal();
+
+    sr.reveal('.portfolio-title', {
+      duration: 1500,
+      origin: 'left',
+      distance: '80px',
+      easing: 'ease-in-out',
+      reset: true // Faz com que o efeito se aplique novamente quando o elemento entra na viewport
+    });
+
+    sr.reveal('.project-gallery', {
+      duration: 1000,
+      origin: 'bottom',
+      distance: '30px',
+      easing: 'ease-in-out',
+      interval: 300, // Intervalo entre a revelação dos cartões
+      reset: true // Faz com que o efeito se aplique novamente quando o elemento entra na viewport
+    });
+  }, []);
+
   return (
     <section id="portifolio" className="portfolio">
       <h2 className="portfolio-title">Portfólio</h2>
