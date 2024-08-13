@@ -1,9 +1,9 @@
 
 :root {
-  --primary-color: #003366; /* Azul Escuro */
-  --secondary-color: #66b3ff; /* Azul Claro */
-  --complementary-color: #f0f0f0; /* Cinza Claro */
-  --accent-color: #f57f17; /* Laranja */
+  --primary-color: #002a5d; /* Azul Escuro mais neutro e moderno */
+  --secondary-color: #4a90e2; /* Azul Claro ajustado para um tom mais profissional */
+  --complementary-color: #f5f5f5; /* Cinza Claro ajustado para ser um pouco mais neutro */
+  --accent-color: #ff6f00; /* Laranja mais suave e moderno */
   --white-color: #ffffff; /* Branco */
   
   /* Gradiente linear usando --primary-color */
