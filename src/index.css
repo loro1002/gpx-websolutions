@@ -5,6 +5,13 @@
   --complementary-color: #f0f0f0; /* Cinza Claro */
   --accent-color: #f57f17; /* Laranja */
   --white-color: #ffffff; /* Branco */
+  
+  /* Gradiente linear usando --primary-color */
+  --primary-color-gradient: linear-gradient(
+    to right, 
+    var(--primary-color), 
+    rgba(0, 51, 102, 0.8)
+  );
 }
 
 body {
