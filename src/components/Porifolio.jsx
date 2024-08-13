@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     title: 'Projeto 1',
     description: 'Descrição breve do projeto 1.',
-    image: '../../public/hero-img.png', // Substitua com o caminho para a imagem do projeto
+    image: '/hero-img.png', // Caminho relativo a partir da raiz
     github: 'https://github.com/usuario/projeto1',
     live: 'https://www.exemplo.com/projeto1'
   },
@@ -14,7 +14,7 @@ const projects = [
     id: 2,
     title: 'Fabrica carrocerias',
     description: 'Fabricação e reformas em geral.',
-    image: '../../public/carrocerias-jb.png', // Substitua com o caminho para a imagem do projeto
+    image: '/carrocerias-jb.png', // Caminho relativo a partir da raiz
     github: 'https://github.com/usuario/projeto2',
     live: 'https://carroceriasjb.com.br/'
   },
@@ -22,7 +22,7 @@ const projects = [
     id: 3,
     title: 'Projeto 3',
     description: 'Descrição breve do projeto 3.',
-    image: 'path/to/image3.jpg', // Substitua com o caminho para a imagem do projeto
+    image: '/path/to/image3.jpg', // Caminho relativo a partir da raiz
     github: 'https://github.com/usuario/projeto3',
     live: 'https://www.exemplo.com/projeto3'
   },
