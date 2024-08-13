@@ -1,0 +1,157 @@
+.services {
+    padding: 60px 20px;
+    background-color: var(--primary-color); /* Azul Claro */
+    text-align: center;
+  }
+  .services h2{
+    color: var(--secondary-color) ;
+    padding-bottom: 20px;
+  }
+  .service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .service-item {
+    background: var(--white-color); /* Branco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 40px);
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+  }
+  .service-item.reveal {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .service-icon {
+    font-size: 2rem;
+    color: var(--primary-color); /* Azul Escuro */
+    margin-bottom: 10px;
+  }
+  
+  .service-item h3 {
+    margin: 10px 0;
+    color: var(--primary-color); /* Azul Escuro */
+  }
+  
+  .service-item p {
+    color: var(--complementary-color); /* Cinza Claro */
+  }
+  
+  .service-item button {
+    background-color: var(--accent-color); /* Laranja */
+    color: var(--white-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .service-item button:hover {
+    background-color: #d48c00; /* Laranja mais escuro */
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: var(--white-color);
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+    animation: modalFadeIn 0.5s ease-out;
+  }
+  
+  .modal-content h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: var(--primary-color); /* Azul Escuro */
+    font-weight: bold;
+  }
+  
+  .modal-content p {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--primary-color); /* Cinza Claro */
+    text-align: left;
+  }
+  
+  .modal-close {
+    background: var(--accent-color); /* Laranja */
+    color: var(--white-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal-close:hover {
+    background-color: #d48c00; /* Laranja mais escuro */
+  }
+  
+  
+  /* Responsividade */
+  @media screen and (max-width: 768px) {
+    .service-item {
+      width: calc(50% - 40px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .service-item {
+      width: 100%;
+    }
+  }
+  
+
+  /* animaçoes */
+  /* Animação fade-in para os itens de serviço */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  @keyframes modalFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

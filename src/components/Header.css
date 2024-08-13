@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--primary-color); /* Azul Escuro */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.logo {
+  width: 60px; /* Ajuste conforme necessário */
+}
+
+.logo-text {
+  margin-left: 10px; /* Espaço entre a logo e o texto */
+  color: var(--secondary-color); /* Azul Claro */
+  font-size: 16px;
+  font-weight: bold; /* Adiciona um pouco de destaque ao texto */
+}
+
+.nav-bar {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.nav-ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--secondary-color); /* Azul Claro */
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent-color); /* Laranja */
+}
+
+.hamburger {
+  display: none;
+  font-size: 32px;
+  color: var(--secondary-color); /* Azul Claro */
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: 0.3s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-bar.active {
+    right: 0;
+  }
+
+  .nav-ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

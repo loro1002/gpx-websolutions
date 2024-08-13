@@ -1,0 +1,27 @@
+
+:root {
+  --primary-color: #003366; /* Azul Escuro */
+  --secondary-color: #66b3ff; /* Azul Claro */
+  --complementary-color: #f0f0f0; /* Cinza Claro */
+  --accent-color: #f57f17; /* Laranja */
+  --white-color: #ffffff; /* Branco */
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Fonte para o Texto */
+}
+
+h1, h2, h3, h4, h5, h6, button {
+  font-family: 'Montserrat', sans-serif; /* Fonte para Títulos e Botões */
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
