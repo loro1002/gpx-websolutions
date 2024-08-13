@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/Portifolio.css';
-import heroImg from '../assets/images/hero-img.png';
-import carroceriasImg from '../assets/images/carrocerias-jb.png';
-import image3 from '../assets/images/image3.jpg';
+import heroImg from '../../public/hero-img.png';
+import carroceriasImg from '../../public/carrocerias-jb.png';
+import image3 from '../../public/prefooter.png';
 
 const projects = [
   {
