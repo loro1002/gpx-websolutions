@@ -17,7 +17,7 @@ const Footer = () => {
 
         <div className="footer-info">
           <p>Email: <a href="mailto:jaum775@gmail.com">jaum775@gmail.com</a></p>
-          <p>Telefone: <a href="tel:+5511999999999">(44) 99972016</a></p>
+          <p>Telefone: <a href="tel:+554499702016">(44) 99702016</a></p>
           <p>Endereço: Umuarama, PR, Brasil</p>
         </div>
 
@@ -32,7 +32,7 @@ const Footer = () => {
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <FaGithub />
             </a>
-            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <a href="https://wa.me/554499702016" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
               <FaWhatsapp />
             </a>
           </div>
