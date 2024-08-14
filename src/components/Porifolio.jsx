@@ -4,13 +4,15 @@ import '../styles/Portifolio.css';
 import heroImg from '../../public/hero-img.png';
 import carroceriasImg from '../../public/carrocerias-jb.png';
 import image3 from '../../public/prefooter.png';
+import projetoestilo from '../assets/projeto-estilo.png'
+import projetofunilaria from '../assets/projeto-jb.png'
 
 const projects = [
   {
     id: 1,
-    title: 'Projeto 1',
-    description: 'Descrição breve do projeto 1.',
-    image: heroImg, // Imagem importada
+    title: 'Estofados Estilo',
+    description: 'Mini e-commerce e catalogo.',
+    image: projetoestilo, // Imagem importada
     github: 'https://github.com/usuario/projeto1',
     live: 'https://www.exemplo.com/projeto1'
   },
@@ -24,9 +26,9 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Projeto 3',
-    description: 'Descrição breve do projeto 3.',
-    image: image3, // Imagem importada
+    title: 'Funilaria e Pinturas',
+    description: 'Web site pré pronto.',
+    image: projetofunilaria, // Imagem importada
     github: 'https://github.com/usuario/projeto3',
     live: 'https://www.exemplo.com/projeto3'
   },
