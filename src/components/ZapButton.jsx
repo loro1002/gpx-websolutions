@@ -5,7 +5,7 @@ const FloatingButtons = () => {
   return (
     <div className="floating-buttons">
       <a
-        href="https://wa.me/554499972016?text=vim%20do%20site%20e%20gostaria%20de%20mais%20informações."
+        href="https://wa.me/55449997016?text=vim%20do%20site%20e%20gostaria%20de%20mais%20informações."
         target="_blank"
         rel="noopener noreferrer"
         className="floating-button whatsapp"
