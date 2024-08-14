@@ -34,6 +34,7 @@ const Header = () => {
         <ul className='nav-ul'>
           <li className='nav-list'><a className='nav-link' href="#home">Home</a></li>
           <li className='nav-list'><a className='nav-link' href="#about">Sobre</a></li>
+          <li className='nav-list'><a className='nav-link' href="#services">Serviços</a></li>
           <li className='nav-list'><a className='nav-link' href="#portifolio">Portfólio</a></li>
           <li className='nav-list'><a className='nav-link' href="#contact">Contato</a></li>
         </ul>
